@@ -17,7 +17,7 @@ for i in input_arr:
 sorted_arr = list(logs.keys())
 sorted_arr.sort(key = lambda x: (x[0], x[1]))
 for i in sorted_arr:
-  date = str(i[0])[:4] + "-" + str(i[0])[5:7] + str(i[0])[8:10]
+  date = str(i[0])[:4] + "-" + str(i[0])[4:6] + "-" + str(i[0])[6:]
   event = i[1]
   count = logs[i]
   print(date, ",",event, ",", count)
